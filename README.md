@@ -5,3 +5,24 @@ it works whit some **Limited Emotes**
 & some **Kill Emotes**
 *example:*
 ![STILL_FUNNY](https://github.com/user-attachments/assets/86dcff01-4a80-42de-ba61-b97c091c849b)
+
+# Script:
+`local v364 = game:GetService("Players")
+                local v365 = game:GetService("ReplicatedStorage")
+                local v366 = v364.LocalPlayer
+                local v367 = v366.Character or v366.CharacterAdded:Wait()
+                local v368 = v367:WaitForChild("Humanoid")
+                local v369 = Instance.new("Animation")
+                v369.AnimationId = "rbxassetid://emote id here"
+                v368:LoadAnimation(v369):Play()
+                local v370 = Instance.new("Accessory")
+                v370.Name = "#EmoteHolder_" .. math.random(1, 100000)
+                v370.Parent = v367
+                v370:SetAttribute("EmoteProperty", true)
+                require(v365.Emotes.VFX):MainFunction({
+                    Character = v367,
+                    vfxName = "emote name here",
+                    SpecificModule = v365.Emotes.VFX,
+                    AnimSent = put the same emote id here,
+                    RealBind = v370
+                })`
