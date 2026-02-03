@@ -26,3 +26,6 @@ it works whit some **Limited Emotes**
                     AnimSent = put the same emote id here,
                     RealBind = v370
                 })`
+**Some emote names that work:**
+`Last Will` `Embers` `Final Stand` `Final Spark` `Ruthless` `Divine Form`
+`Boss Raid` `Time Shift` `Lethal Beam` `True Aura` `Flower Bomb` `Sure Hit` `STILL FUNNY?`
